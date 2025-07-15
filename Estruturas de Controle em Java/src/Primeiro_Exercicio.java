@@ -27,11 +27,22 @@ public class Primeiro_Exercicio {
             for(int i = 1; i <= 10; i++) {
                 int calculo = numerodeentrada * i;
                 System.out.println(numerodeentrada + " x " + i + " = " + calculo);
+
             }
-
-
+            if(numerodeentrada == 10){
+                break;
+                }
+            else if(numerodeentrada == 1){
+                break;
+            }
+            else if(numerodeentrada == 2) break;
+            else if(numerodeentrada == 3) break;
+            else if(numerodeentrada == 4) break;
+            else if(numerodeentrada == 5) break;
+            else if(numerodeentrada == 6) break;
+            else if(numerodeentrada == 7) break;
+            else if(numerodeentrada == 8) break;
+            else if(numerodeentrada == 9) break;
         }
-
-
     }
 }
