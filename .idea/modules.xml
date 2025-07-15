@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Estruturas de Controle em Java/Estruturas de Controle em Java.iml" filepath="$PROJECT_DIR$/Estruturas de Controle em Java/Estruturas de Controle em Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fundamentos da Linguagem de Programacao Java/Fundamentos da Linguagem de Programacao Java.iml" filepath="$PROJECT_DIR$/Fundamentos da Linguagem de Programacao Java/Fundamentos da Linguagem de Programacao Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/execios Dio fundamentos da linguagem Java.iml" filepath="$PROJECT_DIR$/execios Dio fundamentos da linguagem Java.iml" />
     </modules>
   </component>

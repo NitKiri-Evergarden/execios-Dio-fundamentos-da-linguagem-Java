@@ -2,7 +2,7 @@
 import java.util.Scanner;
 import java.time.OffsetDateTime;
 
-public class Main {
+public class PrimeiroExercicio {
     public static void main(String[] args) {
 
         /*
