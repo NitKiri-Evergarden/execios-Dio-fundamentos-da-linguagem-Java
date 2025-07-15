@@ -22,7 +22,7 @@ public class PrimeiroExercicio {
 
         String name = null;
         int year = 0;
-        int baseyear = OffsetDateTime.now().getYear();
+        int baseyear = OffsetDateTime.now().getYear(); // "OffsetDateTime.now().getYear" ele pegar a data, hora e ano do sistema do usuario
 
         Scanner leitor = new Scanner(System.in);
 

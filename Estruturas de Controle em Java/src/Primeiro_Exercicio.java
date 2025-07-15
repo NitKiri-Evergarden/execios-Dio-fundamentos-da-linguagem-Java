@@ -18,22 +18,18 @@ public class Primeiro_Exercicio {
         4. Escreva um código onde o usuário informa um número inicial, posteriormente irá informar outros N números, a execução do código irá continuar até que o número informado dividido pelo primeiro número tenha resto diferente de  0 na divisão, números menores que o primeiro número devem ser ignorados */
 
         Scanner leitor = new Scanner(System.in);
-        Int numerodeentrada = null;
+        int numerodeentrada = 0;
 
-        System.out.perntln("Escreva o numero ao qual voce deseja que seja feita a tabuada, do respectivo numero: ");
-        numerodeentrada = leitor.nextInt();
+        for(;;){
+            System.out.println("Escreva o numero ao qual voce deseja que seja feita a tabuada, do respectivo numero: ");
+            numerodeentrada = leitor.nextInt();
 
-        for(numerodeentrada = numerodeentrada; numerodeentrada == 10; numerodeentrada *){
-            numerodeentrada * 1;
-            numerodeentrada * 2;
-            numerodeentrada * 3;
-            numerodeentrada * 4;
-            numerodeentrada * 5;
-            numerodeentrada * 6;
-            numerodeentrada * 7;
-            numerodeentrada * 8;
-            numerodeentrada * 9;
-            numerodeentrada * 10;
+            for(int i = 1; i <= 10; i++) {
+                int calculo = numerodeentrada * i;
+                System.out.println(numerodeentrada + " x " + i + " = " + calculo);
+            }
+
+
         }
 
 
