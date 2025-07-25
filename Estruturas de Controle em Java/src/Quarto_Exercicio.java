@@ -14,7 +14,7 @@ public class Quarto_Exercicio {
         System.out.println("Informe um Número: ");
         numero1 = leitor.nextInt();
 
-        for (;;){ // while (true), ao inves de for 
+        for (;;){ // while (true), ao inves de for pos no For ele ficar em loop infinoto e já no while ele vai ficar ate a condição ser atendida.
             System.out.println("Informe outro número: ");
             numero2 = leitor.nextInt();
 
