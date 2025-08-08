@@ -32,8 +32,8 @@ public class Desafio_de_Acesso_a_Biblioteca {
         Scanner scanner = new Scanner(System.in);
 
         // Entrada de dados do usuário
-        boolean hasPermission = false; //scanner.nextBoolean(); // Lê um valor booleano (true ou false)
-        int age = 0; //scanner.nextInt(); // Lê a idade como inteiro
+        Boolean hasPermission = null; //scanner.nextBoolean(); // Lê um valor booleano (true ou false)
+        Integer age = null; //scanner.nextInt(); // Lê a idade como inteiro
 
         System.out.println("Você tem PERMISSÃO? ");
         hasPermission = scanner.nextBoolean();
