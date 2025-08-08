@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Desafio_de_Acesso_a_Biblioteca {
     public static void main(String[] args) {
 
        /* Desafio
@@ -32,11 +32,33 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Entrada de dados do usuário
-        boolean hasPermission = scanner.nextBoolean(); // Lê um valor booleano (true ou false)
-        int age = scanner.nextInt(); // Lê a idade como inteiro
+        boolean hasPermission = false; //scanner.nextBoolean(); // Lê um valor booleano (true ou false)
+        int age = 0; //scanner.nextInt(); // Lê a idade como inteiro
+
+        System.out.println("Você tem PERMISSÃO? ");
+        hasPermission = scanner.nextBoolean();
+
+        System.out.println("Qual a Sua Idade? ");
+        age = scanner.nextInt();
 
         // TODO: Verifique condições de acesso
+        for (int i = 0; age >= 18; i++) {
+            if(hasPermission == true && age >=18){
+                System.out.println("Você tem Permição para acessar a Biblioteca ");
+                break;
 
-        scanner.close();
+            }else if (hasPermission == false && age >= 18){
+                System.out.println("Você não tem Permissão, Porém tem a Idade minima para acessar a Biblioteca então: VÁ ATRÁS DA SUA PERMICÃO ");
+                break;
+
+            }else if (hasPermission == false && age <= 17){
+                System.out.println("Você não tem Permissão e nem Idade minima, volte quando possuir os dois ");
+
+            }//else{
+               // System.out.println("Você não tem Permissão e nem Idade minima, volte quando possuir os dois ");
+            //}
+
+            scanner.close();
+        }
     }
 }
