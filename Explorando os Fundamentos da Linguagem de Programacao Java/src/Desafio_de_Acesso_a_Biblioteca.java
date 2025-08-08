@@ -41,24 +41,26 @@ public class Desafio_de_Acesso_a_Biblioteca {
         System.out.println("Qual a Sua Idade? ");
         age = scanner.nextInt();
 
+        scanner.close();
+
         // TODO: Verifique condições de acesso
         for (int i = 0; age >= 18; i++) {
             if(hasPermission == true && age >=18){
-                System.out.println("Você tem Permição para acessar a Biblioteca ");
+                System.out.println("Você tem Permissão para acessar a Biblioteca ");
                 break;
 
             }else if (hasPermission == false && age >= 18){
                 System.out.println("Você não tem Permissão, Porém tem a Idade minima para acessar a Biblioteca então: VÁ ATRÁS DA SUA PERMICÃO ");
                 break;
 
-            }else if (hasPermission == false && age <= 17){
+            }/*else if (hasPermission == false && age <= 17){
                 System.out.println("Você não tem Permissão e nem Idade minima, volte quando possuir os dois ");
 
-            }//else{
-               // System.out.println("Você não tem Permissão e nem Idade minima, volte quando possuir os dois ");
-            //}
+            }*/else {
+                System.out.println("Você não tem Permissão e nem Idade minima, volte quando possuir os dois ");
+            }
 
-            scanner.close();
+            //scanner.close();
         }
     }
 }
