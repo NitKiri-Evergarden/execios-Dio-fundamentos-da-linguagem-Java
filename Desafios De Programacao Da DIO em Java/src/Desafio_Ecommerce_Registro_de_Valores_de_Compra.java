@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Locale;
 
 public class Desafio_Ecommerce_Registro_de_Valores_de_Compra {
-    public void static main(String{} args){
+    public static void main(String[] args){
 
         /*Desafio
         Você está desenvolvendo um sistema simples para um e-commerce que deseja registrar os valores das compras realizadas por um cliente ao longo de um único dia. O sistema deve primeiro receber a quantidade total de compras realizadas e, em seguida, solicitar o valor de cada uma dessas compras. Ao final, o sistema deve exibir o total gasto no dia e a média de valor por compra.
@@ -35,6 +35,8 @@ public class Desafio_Ecommerce_Registro_de_Valores_de_Compra {
 
         Scanner scanner = new Scanner(System.in);
         scanner.useLocale(Locale.US);
+
+        //System.out.println("Quantas compras foram feitas? ");
         int purchaseCount = scanner.nextInt();
 
         if (purchaseCount == 0) {
@@ -44,8 +46,16 @@ public class Desafio_Ecommerce_Registro_de_Valores_de_Compra {
 
             // TODO: Leia os valores das compras e calcule a média
 
+            for(int i = 0; i < purchaseCount; i++){
+                //System.out.println("Qaual o valor total das compras? ");
+                double purchaseValue  = scanner.nextDouble();
+                totalSpent = totalSpent + purchaseValue;
+            }
+
+            double average = totalSpent / purchaseCount;
+
             System.out.printf("%.2f%n", totalSpent);
-            System.out.printf("%.2f%n", ); // TODO: Imprima a média
+            System.out.printf("%.2f%n", average); // TODO: Imprima a média
         }
 
         scanner.close();
